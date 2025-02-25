@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo MySenza1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #qrcode {
+            margin: 20px auto;
+        }
+        img {
+            width: 80%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>🔥 PROMO SPECIALE! 🔥</h2>
+    <p>➡ Acquista 1 profumo da 500ml e te ne regaliamo un altro!<br>
+       📌 Puoi scegliere tra profumi per ambiente e bucato.</p>
+    <p>🎁 E c’è di più! Ti invio già un QR code con il 20% di sconto + una boccetta di profumo ambiente inedito per il tuo prossimo acquisto!</p>
+    <p>💡 Fai sapere ai tuoi amici che hai scelto MySenza1!<br>
+       📢 Condividi questa promo sui tuoi social e tagga 👉 @mysenza1 su Instagram.</p>
+    <p>📩 Quando i tuoi amici iniziano a seguirci, girami lo screen e avrai una sorpresa extra!</p>
+    <h3>🔹 Scansiona il QR Code per attivare la promo!</h3>
+    <div id="qrcode"></div>
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://mysenza1.com/promo20", // Sostituisci con il link reale
+            width: 200,
+            height: 200
+        });
+    </script>
+    <p>🔹 <strong>Scrivimi per ordinarlo!</strong></p>
+    <img src="mysenza_promo.png" alt="Promo MySenza1">
+</body>
+</html>
