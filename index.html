@@ -15,15 +15,34 @@
             max-width: 500px;
             cursor: pointer;
         }
+        #promoText {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
     </style>
+    <script>
+        function showMessage() {
+            document.getElementById("promoText").style.display = "block";
+        }
+    </script>
 </head>
 <body>
-    <a href="https://anto161062.github.io/promo-mysenza/" target="_blank">
+    <a href="#" onclick="showMessage()">
         <img src="mysenza_promo.png" alt="Clicca per vedere la promo">
     </a>
-    <p><strong>📖 Apri il catalogo e fai il tuo ordine:</strong></p>
-    <a href="https://anto161062.github.io/catalogo-mysenza/" target="_blank">
-        <img src="ordine carrello con nome .png" alt="QR Code per il catalogo">
-    </a>
+    
+    <div id="promoText">
+        <h2>🔥 PROMO SPECIALE! 🔥</h2>
+        <p>➡ Acquista 1 profumo da 500ml e io ne aggiungo uno in omaggio a tua scelta!<br>
+           📌 Puoi scegliere tra profumi per ambiente e bucato, da 500ml.</p>
+        <p>🎁 E c’è di più! Quando mi invii l'ordine, ti invio un Buono con il 30% di sconto sul profumo ambiente e 20% sul profumo bucato + una boccetta di profumo inedito per il tuo prossimo acquisto!</p>
+        <p>💡 Ah, una gentilezza… Condividimi con i tuoi amici, di' loro di me e di MySenza1, fai girare i miei dettagli. C’è sempre bisogno di un po' di gentilezza… e ti ringrazio fin da subito.</p>
+        
+        <p><strong>📖 Apri il catalogo e fai il tuo ordine:</strong></p>
+        <a href="https://anto161062.github.io/catalogo-mysenza/" target="_blank">
+            <img src="ordine carrello con nome .png" alt="QR Code per il catalogo">
+        </a>
+    </div>
 </body>
 </html>
